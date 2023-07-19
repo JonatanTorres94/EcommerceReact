@@ -3,6 +3,7 @@ import { requestData } from "../../helpers/requestdata"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { Spinner } from "../Spinner/Spinner"
+import { SubMenu } from "../SubMenu/SubMenu"
 
 
 
@@ -29,12 +30,12 @@ export const ItemListContainer = () => {
             .finally(() => {
                 setLoading(false)
             })
-    }, [])
+    }, [categoryId])
 
 
     return (
         <div>
-            <h3> hola</h3>
+            <SubMenu/>
             {
                 
                 loading

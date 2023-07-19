@@ -4,6 +4,6 @@ export const requestData = () =>{
     return new Promise((resolve, reject) =>{
         setTimeout(() => {
             resolve(MONK_DATA)
-        },1000)
+        },300)
     })
   }

@@ -1,52 +1,92 @@
 [
     {
       "id": 1,
-      "name": "Basic Tee",
+      "name": "Keyboard",
       "href": "#",
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      "imageSrc": "/public/teclado.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
-      "price": 35,
-      "color": "Black",
+      "price": 85,
+      "color": "Mechanic",
       "category": "peripherals"
     },
     {
       "id": 2,
-      "name": "Basic Tee",
+      "name": "Cabinet",
       "href": "#",
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      "imageSrc": "/public/gabinete01.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
-      "price": 355,
-      "color": "Black",
+      "price": 105,
+      "color": "Traditional",
       "category": "cabinet"
     },
     {
       "id": 3,
-      "name": "Basic Tee",
+      "name": "Cabinet",
       "href": "#",
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      "imageSrc": "/public/gabinete02.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
-      "price": 35,
-      "color": "Black",
-      "category": "component"
+      "price": 260,
+      "color": "RGB",
+      "category": "cabinet"
     },
     {
       "id": 4,
-      "name": "Basic Tee",
+      "name": "Cabinet",
       "href": "#",
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      "imageSrc": "/public/gabinete03.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
-      "price": 35,
-      "color": "Black",
-      "category": "component"
+      "price": 350,
+      "color": "MBlack",
+      "category": "cabinet"
     },
     {
       "id": 5,
-      "name": "Basic Tee",
+      "name": "RTTX 4080",
       "href": "#",
-      "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      "imageSrc": "/public/imagen1.jpg",
+      "imageAlt": "Front of men's Basic Tee in black.",
+      "price": 2000,
+      "color": "ASUS",
+      "category": "component"
+    },
+    {
+      "id": 6,
+      "name": "RTX 2080",
+      "href": "#",
+      "imageSrc": "/public/imagen2.jpg",
+      "imageAlt": "Front of men's Basic Tee in black.",
+      "price": 900,
+      "color": "Geforce",
+      "category": "component"
+    },
+    {
+      "id": 7,
+      "name": "Mouse",
+      "href": "#",
+      "imageSrc": "/public/mouse.jpg",
+      "imageAlt": "Front of men's Basic Tee in black.",
+      "price": 45,
+      "color": "Rat",
+      "category": "peripherals"
+    },
+    {
+      "id": 8,
+      "name": "Mouse",
+      "href": "#",
+      "imageSrc": "/public/mouse02.jpg",
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 35,
-      "color": "Black",
+      "color": "Red dragon",
+      "category": "peripherals"
+    },
+    {
+      "id": 9,
+      "name": "Intel core i9",
+      "href": "#",
+      "imageSrc": "/public/procesador01.jpg",
+      "imageAlt": "Front of men's Basic Tee in black.",
+      "price": 750,
+      "color": "Intel",
       "category": "component"
     }
   ]
