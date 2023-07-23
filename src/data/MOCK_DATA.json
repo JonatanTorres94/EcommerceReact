@@ -7,7 +7,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 85,
       "color": "Mechanic",
-      "category": "peripherals"
+      "category": "peripherals",
+      "stock":5
     },
     {
       "id": 2,
@@ -17,7 +18,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 105,
       "color": "Traditional",
-      "category": "cabinet"
+      "category": "cabinet",
+      "stock":5
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 260,
       "color": "RGB",
-      "category": "cabinet"
+      "category": "cabinet",
+      "stock":5
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 350,
       "color": "MBlack",
-      "category": "cabinet"
+      "category": "cabinet",
+      "stock":5
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 2000,
       "color": "ASUS",
-      "category": "component"
+      "category": "component",
+      "stock":5
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 900,
       "color": "Geforce",
-      "category": "component"
+      "category": "component",
+      "stock":5
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 45,
       "color": "Rat",
-      "category": "peripherals"
+      "category": "peripherals",
+      "stock":5
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 35,
       "color": "Red dragon",
-      "category": "peripherals"
+      "category": "peripherals",
+      "stock":5
     },
     {
       "id": 9,
@@ -87,6 +95,7 @@
       "imageAlt": "Front of men's Basic Tee in black.",
       "price": 750,
       "color": "Intel",
-      "category": "component"
+      "category": "component",
+      "stock":5
     }
   ]
