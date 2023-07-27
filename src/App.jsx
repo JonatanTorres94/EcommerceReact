@@ -8,33 +8,42 @@ import { Contact } from './components/Contact/Contact'
 import { Footer } from './components/Footer/Footer'
 import { PageNotFound } from './components/PageNotFound/PageNotFound'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartProvider } from './contex/CartContext'
+import { DarkModeProvider } from './contex/DarkModeContext'
+import './App.css'
 
- 
+
 
 function App() {
 
   return (
 
-    <BrowserRouter>
+    <DarkModeProvider >
+      <CartProvider>
 
-      <Header />
+        <BrowserRouter>
 
-      <Routes>
-        <Route path='/' element={<ItemListContainer />} />
-        <Route path="/product/:categoryId" element= {<ItemListContainer/>} />
-        <Route path='/detail/:itemId' element= {<ItemDetailContainer />} />
-        <Route path='/contact' element= {<Contact/>} />
-        <Route path='*' element={<PageNotFound/>} />
-      </Routes>
-      
-      {/*<QueryGpt />*/}
+          
+            <Header />
 
-      {/* <MapsApi/> */}
-      
-      <Footer/>
-    </BrowserRouter>
-    
+            <Routes>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path="/product/:categoryId" element={<ItemListContainer />} />
+              <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='*' element={<PageNotFound />} />
+            </Routes>
 
+            {/*<QueryGpt />*/}
+
+            {/* <MapsApi/> */}
+
+            <Footer />
+          
+        </BrowserRouter>
+
+      </CartProvider>
+    </DarkModeProvider>
   )
 }
 
