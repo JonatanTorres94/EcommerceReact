@@ -14,7 +14,6 @@ export const ItemDetailOrigin = ({ item }) => {
             setquantity
         }
         
-        console.log(newItem)
     }
 
     return (

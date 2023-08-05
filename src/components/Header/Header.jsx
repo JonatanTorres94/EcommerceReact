@@ -3,12 +3,13 @@ import { IoMdCart } from 'react-icons/io'
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../../contex/DarkModeContext';
+import { CartContext } from '../../contex/CartContext';
 
 
 
 export const Header = () => {
     const {isDarkMode, toggleDarkMode} = useContext(DarkModeContext);
-    console.log(isDarkMode)
+    const {totalQuantily} = useContext(CartContext)
     return (
         <header className={`bg-white shadow ${isDarkMode ? 'dark' : ''}`}>
             <div className="container mx-auto flex items-center justify-between p-4">
@@ -46,7 +47,7 @@ export const Header = () => {
                         <Link to="/login" className="text-gray-600 hover:text-blue-500">Iniciar sesión</Link>
                         <Link to="/cart" className="text-gray-600 hover:text-blue-500">
                             <IoMdCart className="inline-block mr-1" />
-                            Carrito
+                            {totalQuantily() != 0 && totalQuantily()}
                         </Link>
                     </nav>
                 </div>

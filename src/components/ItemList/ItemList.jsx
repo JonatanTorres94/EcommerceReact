@@ -3,6 +3,7 @@ import ItemCard from "../ItemCard/ItemCard"
 import { DarkModeContext } from "../../contex/DarkModeContext"
 import { Footer } from "../Footer/Footer"
 
+
 const ItemList = ({ products }) => {
     const {isDarkMode} = useContext(DarkModeContext)
     return (
@@ -16,6 +17,7 @@ const ItemList = ({ products }) => {
                     </div>
                 </div>
             </div>
+            
             <Footer/>
         </div>
     )

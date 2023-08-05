@@ -6,7 +6,6 @@ const MapsApi = () => {
     center: [20, 10], // La ubicación central del mapa, por ejemplo, [latitud, longitud]
     zoom: 2, // Nivel de zoom del mapa
   };
-  console.log(mapLocation)
 
   
   return (

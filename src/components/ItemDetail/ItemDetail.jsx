@@ -40,7 +40,6 @@ export const ItemDetail = ({ item }) => {
                 <p className="text-gray-600 mb-2 text-elements">In Stock: {item.stock}</p>
 
 
-
                 {addedToCart ? (
                     // Si se ha agregado al carrito, mostramos un mensaje y un botón para restablecer el contador
                     <>
@@ -56,7 +55,7 @@ export const ItemDetail = ({ item }) => {
 
                         <Link
                             className="block bg-green-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-                            style={{textAlign:'center'}}
+                            style={{ textAlign: 'center' }}
                             to="/cart"
                         >
                             Finish buying
@@ -71,7 +70,7 @@ export const ItemDetail = ({ item }) => {
 
 
 
-            
+
             </div>
         </div>
     );
