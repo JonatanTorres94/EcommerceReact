@@ -9,21 +9,13 @@ const [showNotification, setShowNotification] = useState(false)
     setShowNotification (true)
     toast[type](message, {
       position: toast.POSITION.TOP_RIGHT,
-      autoClose: 5000,
+      autoClose: 1200,
       onClose: () => setShowNotification(false),
     });
     if (onClick) {
-        setTimeout(onClick,5000);
+        setTimeout(onClick,1200);
       }
   };
-
-//   const handleOnClick = () => {
-//     showToast(); // Mostrar la notificación antes de ejecutar la función onClick
-//     if (onClick) {
-//         setTimeout(onClick,500)
-//     }
-//   };
-
   return (
     <div>
     <button

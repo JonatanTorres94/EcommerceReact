@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../../contex/DarkModeContext';
 import { CartContext } from '../../contex/CartContext';
 
-
-
 export const Header = () => {
     const {isDarkMode, toggleDarkMode} = useContext(DarkModeContext);
     const {totalQuantily} = useContext(CartContext)
@@ -17,17 +15,17 @@ export const Header = () => {
                     <img src="/public/storeIT200.png" alt="Logo" className="h-8 mr-4" />
                     <div className="flex items-center">
                         <FiMapPin className="text-gray-600" /> {/* Icono de ubicación */}
-                        <div className="ml-2">Ubicación</div>
+                        <div className="ml-2">Location</div>
                     </div>
                     <input
                         type="text"
-                        placeholder="Buscar"
+                        placeholder="Search"
                         className="border border-gray-300 rounded px-2 py-1 ml-4"
                     />
                     <button
                         className="ml-4 bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-2"
                     >
-                        Ofertas
+                        Offers
                     </button>
                 </div>
                 <div className="flex items-center">
@@ -40,11 +38,11 @@ export const Header = () => {
                         {isDarkMode ? <FiSun /> : <FiMoon />}
                     </button>
                     <nav className="mr-4 space-x-4">
-                        <Link to="/" className="text-gray-600 hover:text-blue-500">Nuestros Productos</Link>
-                        <Link to="/storep2p" className="text-gray-600 hover:text-blue-500">Tienda P2P</Link>
-                        <Link to="/history" className="text-gray-600 hover:text-blue-500">Historial</Link>
-                        <Link to="/contact" className="text-gray-600 hover:text-blue-500">Contacto</Link>
-                        <Link to="/login" className="text-gray-600 hover:text-blue-500">Iniciar sesión</Link>
+                        <Link to="/" className="text-gray-600 hover:text-blue-500">Our products</Link>
+                        <Link to="/storep2p" className="text-gray-600 hover:text-blue-500">Store P2P</Link>
+                        <Link to="/history" className="text-gray-600 hover:text-blue-500">Record</Link>
+                        <Link to="/contact" className="text-gray-600 hover:text-blue-500">Contact</Link>
+                        <Link to="/login" className="text-gray-600 hover:text-blue-500">Log in</Link>
                         <Link to="/cart" className="text-gray-600 hover:text-blue-500">
                             <IoMdCart className="inline-block mr-1" />
                             {totalQuantily() != 0 && totalQuantily()}

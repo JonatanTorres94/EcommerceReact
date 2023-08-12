@@ -22,6 +22,10 @@ export const CartProvider = ({ children }) => {
         setCart ( cart.filter((item) => item.id !== id) )
 
     }
+    const isInCart = (id) => {
+
+        return cart.some((item) => item.id === id)
+      }
 
     const emptyCart = () =>{
         return setCart([])
@@ -35,6 +39,7 @@ export const CartProvider = ({ children }) => {
             setCart,
             emptyCart,
             remuveCart,
+            isInCart,
             totalQuantily
         }} >
 

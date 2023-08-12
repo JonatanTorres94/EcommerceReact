@@ -9,15 +9,14 @@ export const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
 
-   
     const { itemId } = useParams()
 
-    
+
     useEffect(() => {
         setLoading(true)
 
         //1- armo ref
-        const itemRef = doc(db, "products", itemId )
+        const itemRef = doc(db, "products", itemId)
         //2- llamar ref
         getDoc(itemRef)
             .then((doc) => {
@@ -26,8 +25,10 @@ export const ItemDetailContainer = () => {
                     ...doc.data()
                 })
             })
+
             .catch(e => console.log(e))
             .finally(() => setLoading(false))
+
     }, [])
 
     return (

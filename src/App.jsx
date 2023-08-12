@@ -2,7 +2,6 @@ import { Header } from './components/Header/Header'
 import 'tailwindcss/tailwind.css'
 import '@tailwindcss/ui/dist/tailwind-ui.css'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
-import MapsApi from './components/MapsApi/MapsApi'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Contact } from './components/Contact/Contact'
 import { PageNotFound } from './components/PageNotFound/PageNotFound'
@@ -11,6 +10,7 @@ import { CartProvider } from './contex/CartContext'
 import { DarkModeProvider } from './contex/DarkModeContext'
 import './App.css'
 import { CartView } from './components/CartView/CartView'
+import Checkout from './components/Checkout/Chekout'
 
 
 
@@ -23,25 +23,26 @@ function App() {
 
         <BrowserRouter>
 
-          
-            <Header />
 
-            <Routes>
-              <Route path='/' element={<ItemListContainer />} />
-              <Route path="/product/:categoryId" element={<ItemListContainer />} />
-              <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/cart' element={<CartView/>} />
-              <Route path='*' element={<PageNotFound />} />
-              
-            </Routes>
+          <Header />
 
-            {/*<QueryGpt />*/}
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path="/product/:categoryId" element={<ItemListContainer />} />
+            <Route path='/detail/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/cart' element={<CartView />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path='*' element={<PageNotFound />} />
 
-            {/* <MapsApi/> */}
+          </Routes>
 
-            
-          
+          {/*<QueryGpt />*/}
+
+          {/* <MapsApi/> */}
+
+
+
         </BrowserRouter>
 
       </CartProvider>

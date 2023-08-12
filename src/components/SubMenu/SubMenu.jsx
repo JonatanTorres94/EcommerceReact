@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../contex/DarkModeContext';
 
 export const SubMenu = () => {
+    const {isDarkMode } = useContext(DarkModeContext)
     return (
-        <nav className="flex justify-center mt-4" style={{margin:'2%'}}>
+        <div className={`${isDarkMode ? 'dark' : ''}`}>
+        <nav className="flex justify-center mt-4" >
             <Link to="/product/component" className="inline-block px-4 py-2 mx-2 bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium rounded">
                 Components
             </Link>
@@ -14,5 +17,6 @@ export const SubMenu = () => {
                 Peripherals
             </Link>
         </nav>
+        </div>
     )
 }

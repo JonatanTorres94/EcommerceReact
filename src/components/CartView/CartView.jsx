@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../contex/CartContext"
 import { FaTrash } from 'react-icons/fa'
+import { Link } from "react-router-dom"
 
 export const CartView = () => {
 
@@ -8,7 +9,7 @@ export const CartView = () => {
 
     return (
         <div className="p-4 border border-gray-300 rounded">
-            <h2 className="text-2xl font-semibold mb-4">Tu compra:</h2>
+            <h2 className="text-2xl font-semibold mb-4">Your purchase:</h2>
             <hr className="mb-4" />
 
             <div className="ml-40">
@@ -42,6 +43,10 @@ export const CartView = () => {
                     className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded">
                     Empty Cart
                 </button>
+
+                <Link className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block mx-2" to="/checkout">
+                    Finish my purchase
+                </Link>
             </div>
         </div>
     )

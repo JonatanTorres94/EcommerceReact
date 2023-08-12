@@ -6,17 +6,17 @@ export const Footer = () => {
     <footer className="bg-gray-800 text-gray-300 py-6">
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="text-sm">
-          &copy; {new Date().getFullYear()} Mi Tienda Online. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} My Online Store. All rights reserved.
         </div>
         <div className="flex items-center space-x-4">
           <Link to="/termsofuse" className="text-gray-300 hover:text-white">
-            Términos de uso
+            Terms of use
           </Link>
           <Link to="/privacypolicy" className="text-gray-300 hover:text-white">
-            Política de privacidad
+            Privacy Policy
           </Link>
           <Link to="/contact" className="text-gray-300 hover:text-white">
-            Contacto
+            Contact
           </Link>
         </div>
       </div>
